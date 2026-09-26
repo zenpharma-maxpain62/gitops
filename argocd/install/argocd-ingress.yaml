@@ -3,8 +3,6 @@ kind: Ingress
 metadata:
   name: argocd-server-ingress
   namespace: argocd
-  labels:
-    managed-by: terraform
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
@@ -15,7 +13,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: argocd.pharma.internal
+    - host: argocd.gauravtest.store
       http:
         paths:
           - path: /
