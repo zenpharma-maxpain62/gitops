@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: argocd.gauravtest.store
+    - host: argocd.gauravlab.space
       http:
         paths:
           - path: /
