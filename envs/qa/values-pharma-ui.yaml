@@ -9,7 +9,7 @@ service:
   port: 80
   targetPort: 80
 ingress:
-  host: pharmaui.gauravtest.store
+  host: pharmauiqa.gauravlab.space
   enabled: true
   className: alb
   annotations:
